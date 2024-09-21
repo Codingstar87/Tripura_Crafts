@@ -1,0 +1,42 @@
+.products {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.6s; /* Smooth scaling transition */
+    width: 320px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product:hover {
+    transform: scale(1.05); /* Scale the product slightly */
+    transition: 0.6s; /* Smooth scaling transition */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+
+.product h4 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product p {
+    color: #555;
+}
