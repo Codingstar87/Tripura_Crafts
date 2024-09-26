@@ -1,71 +1,131 @@
-/* Base Header Styling */
+
+ .fix-position-header{
+    
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+ }
+ 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #2e8b57;
-    color: white;
+    padding: 0px 60px 0px 60px;
+    background-color: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.54); 
+    
+}
+.header h1{
+    font-family: "Gowun Batang", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 30px;
+
 }
 
-.header ul {
-    list-style: none;
-    display: flex;
-}
-
-.header ul li {
-    margin-left: 20px;
-}
-
-.header ul li a {
-    color: white;
-    text-decoration: none;
-}
 .logo {
     display: flex;
     align-items: center;
 }
 
 .logo-image {
-    width: 100px; /* Adjust size as needed */
+    width: 130px;
     height: auto;
-    margin-right: 10px;
-     /* Space between the logo and the heading */
+    margin-right: 270px;
+    
     mix-blend-mode: multiply;
-    border: none; /* Removes any border */
-    outline: none; /* Ensures no outline around the image */
+    border: none; 
+    outline: none;
 }
+.menu-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .drawer-content {
+    width: 300px;
+    padding: 15px;
+    
+  }
+ 
+  .close-button {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+  }
+  
 
+  .MuiDivider-root {
+    margin: 20px 0;
+  }
+  
 
-/* Responsive Header for Tablets (768px and below) */
-@media screen and (max-width: 768px) {
+  .MuiListItem-root {
+    padding: 10px 16px;
+    color: #075b27; 
+    font-family: "Gowun Batang", serif;
+    
+  }
+  
+  
+  .MuiListItem-root:hover {
+    background-color: #e0e0e0; 
+    color: rgb(183, 4, 120);
+  }
+
+  @media (max-width: 768px) {
     .header {
-        flex-direction: column; /* Stack header elements vertically */
-        padding: 15px;
+        padding: 0px 20px; /* Reduce padding for smaller screens */
+        flex-direction: row; /* Stack the header items vertically */
     }
 
-    .header ul {
-        flex-direction: column; /* Stack nav links vertically */
-        align-items: center;
+    .logo-image {
+        width: 100px; /* Reduce logo size for smaller screens */
+        margin-right: 0; /* Remove extra margin */
     }
 
-    .header ul li {
-        margin: 10px 0; /* Add vertical spacing between items */
+    .header h1 {
+        font-size: 24px; /* Reduce heading size */
+        text-align: center; /* Center the heading */
+    }
+
+    .menu-icon {
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
     }
 }
-
-/* Responsive Header for Mobile (480px and below) */
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
     .header {
-        padding: 10px;
+        padding: 0px 80px 0px 20px; /* Further reduce padding for mobile view */
+        flex-direction: row; /* Ensure header items are in a row */
+      
+        align-items: center; /* Align items vertically centered */
     }
 
-    .header ul {
-        flex-direction: column;
-        align-items: flex-start; /* Align links to the left for mobile */
+    .header h1 {
+        font-size: 12px; /* Smaller font size for mobile */
+        margin: 0; /* Remove any default margin */
+        flex: 1; /* Allow the heading to grow */
+        text-align: left; /* Align text to the left */
+
     }
 
-    .header ul li {
-        margin: 5px 0; /* Reduce spacing between items */
+    .logo-image {
+        width: 50px; /* Smaller logo for mobile */
+     
+        margin-left: 90px;
+    }
+
+    .menu-icon {
+        margin-left: auto; /* Push menu icon to the right */
+        flex: none; /* Prevent it from growing */
+    }
+
+    .drawer-content {
+        width: 100%; /* Full width drawer for mobile */
     }
 }

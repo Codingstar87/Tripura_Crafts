@@ -1,49 +1,6 @@
-/* .products {
-    padding: 20px;
-    text-align: center;
-}
-
-.product-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-.product {
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.6s; /* Smooth scaling transition 
-    width: 320px;
-}
-
-.product img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.product:hover {
-    transform: scale(1.05); /* Scale the product slightly 
-    transition: 0.6s; /* Smooth scaling transition 
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow on hover 
-}
-
-.product h4 {
-    margin: 10px 0;
-    font-size: 18px;
-}
-
-.product p {
-    color: #555;
-} */
-/* Base styling for products */
 /* Base styling for products */
 .products {
-    padding: 20px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -62,12 +19,18 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.6s; /* Smooth scaling transition */
-    width: 300px; /* Fixed width for desktop view */
+    width: 350px; /* Fixed width for desktop view */
+    display: flex;
+    flex-direction: column; /* Ensures content is stacked vertically */
+    justify-content: space-between; /* Spreads out image and text nicely */
+    min-height: 400px; /* Set a minimum height for uniformity */
 }
 
+/* Fix the image size and maintain aspect ratio */
 .product img {
     width: 100%;
-    height: auto;
+    height: 350px; /* Fixed height to keep image size uniform */
+    object-fit: cover; /* Ensures the image covers the container while keeping aspect ratio */
     border-radius: 8px;
 }
 
@@ -85,6 +48,7 @@
 
 .product p {
     color: #555;
+    flex-grow: 1; /* This ensures the description takes up remaining space */
 }
 
 /* Responsive Styling for Tablets (768px and below) */
@@ -94,24 +58,31 @@
     }
     .product {
         width: calc(100% / 3 - 30px); /* 3 products per row on tablets */
+        min-height: 400px; /* Adjust min-height for smaller screens */
     }
 }
 
 /* Responsive Styling for Mobile (480px and below) */
 @media screen and (max-width: 480px) {
-    
     .product {
-        width: 110px;
-        /* 2 products per row on mobile */
+        width: calc(100% / 2 - 20px); /* 2 products per row on mobile */
+        min-height: 350px; /* Adjust min-height for mobile */
+    }
+    .product img {
+        height: 150px; /* Adjust image height for smaller screens */
     }
 }
 
 /* Extra Small Screens (320px and below) */
 @media screen and (max-width: 320px) {
     .product {
-        width: 10px; /* 1 product per row for very small screens */
+        width: 100%; /* Full width for very small screens */
+        min-height: 300px; /* Adjust min-height for very small screens */
+    }
+    .product img {
+        height: 120px; /* Adjust image height for extra small screens */
     }
     .product-list {
-        gap: 100px; /* Reduce gap for extra small screens */
+        gap: 10px; /* Reduce gap for extra small screens */
     }
 }
