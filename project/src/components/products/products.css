@@ -20,7 +20,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.6s; 
-    width: 330px; 
+    width: 300px; 
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
