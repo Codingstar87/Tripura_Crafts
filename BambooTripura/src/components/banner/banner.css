@@ -1,0 +1,82 @@
+.banner {
+    /* background-image: url('bamboo-background.jpg'); */
+    background-size: cover;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(202, 54, 54);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.banner h2 {
+    font-size: 2rem;
+    font-family: "Gowun Batang", serif;
+}
+
+.banner button {
+    margin-top: 20px;
+}
+
+.circle-images-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+}
+
+.image-wrapper {
+    width: 147px;  /* Wrapper size is slightly larger */
+    height: 147px;
+    padding: 2px;  /* 2px gap between the image and the border */
+    border-radius: 50%;
+    background: linear-gradient(to left bottom, rgb(230, 30, 63), rgb(240, 240, 51)); /* Gradient border */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-image {
+    width: 138px;  /* Image size */
+    height: 138px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) { /* Tablet view */
+    .circle-images-container {
+        flex-direction: row; /* Align items in a row */
+        justify-content: space-between; /* Distribute space between items */
+    }
+
+    .image-wrapper {
+        width: 120px; /* Adjust wrapper size */
+        height: 120px; /* Adjust height */
+    }
+
+    .circle-image {
+        width: 110px; /* Adjust image size */
+        height: 110px; /* Adjust height */
+    }
+}
+
+@media (max-width: 480px) { /* Mobile view */
+    .circle-images-container {
+        flex-direction: row; /* Ensure row-wise layout */
+        justify-content: center; /* Center items */
+    }
+
+    .image-wrapper {
+        width: 100px; /* Adjust wrapper size */
+        height: 100px; /* Adjust height */
+    }
+
+    .circle-image {
+        width: 90px; /* Adjust image size */
+        height: 90px; /* Adjust height */
+    }
+}
