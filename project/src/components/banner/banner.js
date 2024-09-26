@@ -1,13 +1,29 @@
 import React from 'react';
 import './banner.css';
+import img1 from '../Assests/bmw-m-series-seo-overview-ms-04.jpg'; // Example image, replace with your actual image paths
+// import img2 from '../Assests/images (1).jpeg';
+import img2 from '../Assests/images.jpeg';
+import img3 from '../Assests/desktop_banner_modi_0.png';
 
 const Banner = () => {
+    const images = [img1,
+                    img2,
+                    img3]; 
     return (
         <div className="banner">
             <h2>Eco-Friendly Bamboo Products</h2>
-            <p>Switch to sustainable, eco-friendly products made from bamboo.</p>
-            <button>Shop Now</button>
+            {/* <p>Switch to sustainable, eco-friendly products made from bamboo.</p>
+            <button>Shop Now</button> */}
+            <div className="circle-images-container">
+            {images.map((imgSrc, index) => (
+                <div key={index} className="image-wrapper">
+                    <img src={imgSrc} alt={`Image ${index + 1}`} className="circle-image" />
+                </div>
+            ))}
         </div>
+
+        </div>
+        
     );
 }
 

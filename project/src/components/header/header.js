@@ -1,11 +1,13 @@
 import React from 'react';
-import './header.css'; // Create a CSS file for styling
+import './header.css'; // Ensure you have styling in place
+import logo from '../Assests/WhatsApp Image 2024-09-22 at 01.53.30_1c32b0c9.jpg'; // Adjust the path to your logo image
 
 const Header = () => {
     return (
         <header className="header">
-            <div className="logo">
                 <h1>Bamboo Clone</h1>
+            <div className="logo">
+                <img src={logo} alt="Bamboo Clone Logo" className="logo-image" />
             </div>
             <nav>
                 <ul>

@@ -1,3 +1,4 @@
+/* Base Header Styling */
 .header {
     display: flex;
     justify-content: space-between;
@@ -19,4 +20,52 @@
 .header ul li a {
     color: white;
     text-decoration: none;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px;
+     /* Space between the logo and the heading */
+    mix-blend-mode: multiply;
+    border: none; /* Removes any border */
+    outline: none; /* Ensures no outline around the image */
+}
+
+
+/* Responsive Header for Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack header elements vertically */
+        padding: 15px;
+    }
+
+    .header ul {
+        flex-direction: column; /* Stack nav links vertically */
+        align-items: center;
+    }
+
+    .header ul li {
+        margin: 10px 0; /* Add vertical spacing between items */
+    }
+}
+
+/* Responsive Header for Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .header ul {
+        flex-direction: column;
+        align-items: flex-start; /* Align links to the left for mobile */
+    }
+
+    .header ul li {
+        margin: 5px 0; /* Reduce spacing between items */
+    }
 }

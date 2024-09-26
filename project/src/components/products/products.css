@@ -1,4 +1,4 @@
-.products {
+/* .products {
     padding: 20px;
     text-align: center;
 }
@@ -16,7 +16,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.6s; /* Smooth scaling transition */
+    transition: transform 0.6s; /* Smooth scaling transition 
     width: 320px;
 }
 
@@ -27,9 +27,9 @@
 }
 
 .product:hover {
-    transform: scale(1.05); /* Scale the product slightly */
-    transition: 0.6s; /* Smooth scaling transition */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+    transform: scale(1.05); /* Scale the product slightly 
+    transition: 0.6s; /* Smooth scaling transition 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow on hover 
 }
 
 .product h4 {
@@ -39,4 +39,79 @@
 
 .product p {
     color: #555;
+} */
+/* Base styling for products */
+/* Base styling for products */
+.products {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+/* Product styles for desktop */
+.product {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.6s; /* Smooth scaling transition */
+    width: 300px; /* Fixed width for desktop view */
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Hover effect */
+.product:hover {
+    transform: scale(1.05);
+    transition: 0.6s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.product h4 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product p {
+    color: #555;
+}
+
+/* Responsive Styling for Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+    .product-list {
+        justify-content: center; /* Center products for smaller screens */
+    }
+    .product {
+        width: calc(100% / 3 - 30px); /* 3 products per row on tablets */
+    }
+}
+
+/* Responsive Styling for Mobile (480px and below) */
+@media screen and (max-width: 480px) {
+    
+    .product {
+        width: 110px;
+        /* 2 products per row on mobile */
+    }
+}
+
+/* Extra Small Screens (320px and below) */
+@media screen and (max-width: 320px) {
+    .product {
+        width: 10px; /* 1 product per row for very small screens */
+    }
+    .product-list {
+        gap: 100px; /* Reduce gap for extra small screens */
+    }
 }
