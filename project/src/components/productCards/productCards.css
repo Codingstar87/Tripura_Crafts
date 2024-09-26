@@ -7,7 +7,7 @@
 .card {
     position: relative;
     width: 33%;
-    height: 600px;  /* Adjust as per the desired height */
+    height: 700px;  /* Adjust as per the desired height */
     background-size: cover;
     background-position: center;
     display: flex;

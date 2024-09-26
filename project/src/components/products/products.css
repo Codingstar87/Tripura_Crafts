@@ -67,13 +67,17 @@
 }
 
 @media screen and (max-width: 480px) {
+    .products {
+        padding: 0px;
+        text-align: center;
+    }
     .product {
         width: 40%;
-        min-height: 350px; 
+        min-height: 250px; 
         
     }
     .product img {
-        height: auto; 
+        height: 160px; 
     }
 }
 
