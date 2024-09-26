@@ -2,6 +2,7 @@ import React from 'react';
 import './productCards.css';
 import image1 from "../Assets2/bottle3.jpg"
 import image2 from "../Assets2/wavinglamp2.jpg"
+import image3 from "../Assests/PXL_20240923_160107762.jpg"
 
 
 const ProductCards = () => {
@@ -10,7 +11,7 @@ const ProductCards = () => {
             <div className="card" style={{ backgroundImage: `url(${image1})` }}>
                 <div className="card-content">
                     <h2>Close To Nature</h2>
-                    <p>Switch to bamboo and contribute towards making the world ecofriendly.</p>
+                    <p>We believe in nurturing a greener planet.</p>
                     {/* <a href="#shop-now" className="shop-link">Shop Now +</a> */}
                 </div>
             </div>
@@ -18,15 +19,15 @@ const ProductCards = () => {
             <div className="card" style={{ backgroundImage: `url(${image2})` }}>
                 <div className="card-content">
                     <h2>Being With Nature</h2>
-                    <p>Nurture the planet by making a small switch towards the bamboo toothbrush.</p>
+                    <p>Our eco-friendly bamboo products offer a sustainable alternative to plastic.</p>
                     {/* <a href="#shop-now" className="shop-link">Shop Now +</a> */}
                 </div>
             </div>
 
-            <div className="card" style={{ backgroundImage: `url('../Assests/WhatsApp Image 2024-09-22 at 01.53.30_1c32b0c9.jpg')` }}>
+            <div className="card" style={{ backgroundImage: `url(${image3})` }}>
                 <div className="card-content">
                     <h2>Make The Switch</h2>
-                    <p>Using bamboo toothbrushes would help in reducing the plastic wastage.</p>
+                    <p>Helping you make responsible choices for the environment.</p>
                     {/* <a href="#shop-now" className="shop-link">Shop Now +</a> */}
                 </div>
             </div>

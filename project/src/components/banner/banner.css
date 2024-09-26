@@ -65,9 +65,13 @@
 }
 
 @media (max-width: 480px) { /* Mobile view */
+    .banner{
+        padding-top: 70px;
+    }
     .circle-images-container {
         flex-direction: row; /* Ensure row-wise layout */
         justify-content: center; /* Center items */
+
     }
 
     .image-wrapper {

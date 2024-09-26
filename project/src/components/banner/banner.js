@@ -13,7 +13,7 @@ const Banner = () => {
     return (
     <div className='full-banner'>
         <div className="banner">
-            <h2>Eco-Friendly Bamboo Products</h2>
+            <h1>Eco-Friendly Bamboo Products</h1>
             
             <div className="circle-images-container">
             {images.map((imgSrc, index) => (

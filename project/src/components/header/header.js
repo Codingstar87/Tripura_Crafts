@@ -20,7 +20,7 @@ const Header = () => {
       role="presentation"
       onClick={toggleDrawer(false)}
       onKeyDown={toggleDrawer(false)}
-      className="drawer-content"  // Added class for styling
+      className="drawer-content"  
     >
       {/* Close Button */}
       <IconButton className="close-button" onClick={toggleDrawer(false)}>
