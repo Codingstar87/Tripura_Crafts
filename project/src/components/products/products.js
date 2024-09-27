@@ -1,82 +1,82 @@
 import React from 'react';
 import './products.css';
-import img1 from "../Assests3/bamboo_box1.jpg";
-import img2 from "../Assests3/TRAY 7.jpg"
-import img3 from "../Assests3/bottle1.jpg";
-import img4 from "../Assests3/bottle10.jpg";
-import img5 from "../Assests3/bottle11.jpg";
-import img6 from "../Assests3/bottle2.jpg";
-import img7 from "../Assests3/bottle3.jpg";
-import img8 from "../Assests3/bottle4.jpg";
-import img9 from "../Assests3/bottle5.jpg";
-import img10 from "../Assests3/bottle6.jpg";
-import img11 from "../Assests3/bottle7.jpg";
-import img12 from "../Assests3/bottle8.jpg";
-import img13 from "../Assests3/bottle9.jpg";
-import img14 from "../Assests3/case1.png";
-import img15 from "../Assests3/case2.png";
-import img16 from "../Assests3/case3.png";
-import img17 from "../Assests3/case4.png";
-import img18 from "../Assests3/case5.png";
-import img19 from "../Assests3/clock1.jpg";
-import img20 from "../Assests3/cosmatic01.jpg"
-import img21 from "../Assests3/cosmatic02.jpg"
-import img22 from "../Assests3/cosmatic03.jpg"
-import img23 from "../Assests3/costamic04.jpg"
-import img24 from "../Assests3/costamic05.jpg"
-import img25 from "../Assests3/desk_organizer01.png"
-import img26 from "../Assests3/desk_organizer02.jpg"
-import img27 from "../Assests3/flower_bas1.jpg"
-import img28 from "../Assests3/idcard1.jpg"
-import img29 from "../Assests3/jwellery_boxA1.jpg"
-import img30 from "../Assests3/jwellery_boxA2.jpg"
-import img31 from "../Assests3/jwellery_boxA3.png"
-import img32 from "../Assests3/jwellery_boxB1.jpg"
-import img33 from "../Assests3/jwellery_boxB2.png"
-import img34 from "../Assests3/jwellery_boxB3.png"
-import img35 from "../Assests3/lamp1.jpg"
-import img36 from "../Assests3/lamp2.jpg"
-import img37 from "../Assests3/lamp3.jpg"
-import img38 from "../Assests3/memento1.jpg"
-import img39 from "../Assests3/mirror1.jpg"
-import img40 from "../Assests3/mirror2.jpg"
-import img41 from "../Assests3/mirror3.jpg"
-import img42 from "../Assests3/mirror4.jpg"
-import img43 from "../Assests3/mirror5.jpg"
-import img44 from "../Assests3/soap case A2.jpg"
-import img45 from "../Assests3/soap case A3.jpg"
-import img46 from "../Assests3/soap case A4.jpg"
-import img47 from "../Assests3/table_organizer1.jpg"
-import img48 from "../Assests3/tea_coaster1.png"
+import img1 from "../Assests3/bottle1.jpg";
+import img2 from "../Assests3/bottle2.jpg"
+import img3 from "../Assests3/bottle3.jpg";
+import img4 from "../Assests3/bottle4.jpg";
+import img5 from "../Assests3/bottle5.jpg";
+import img6 from "../Assests3/bottle6.jpg";
+import img7 from "../Assests3/bottle7.jpg";
+import img8 from "../Assests3/bottle8.jpg";
+import img9 from "../Assests3/bottle9.jpg";
+import img10 from "../Assests3/bottle10.jpg";
+import img11 from "../Assests3/bottle11.jpg";
+import img12 from "../Assests3/mirror1.jpg";
+import img13 from "../Assests3/mirror2.jpg";
+import img14 from "../Assests3/mirror3.jpg";
+import img15 from "../Assests3/mirror4.jpg";
+import img16 from "../Assests3/mirror5.jpg";
+import img17 from "../Assests3/lamp1.jpg";
+import img18 from "../Assests3/lamp2.jpg";
+import img19 from "../Assests3/lamp3.jpg";
+import img20 from "../Assests3/waving_lamp2.jpg"
+import img21 from "../Assests3/waving_lampshade1.jpg"
+import img22 from "../Assests3/waving_lampshade2.jpg"
+import img23 from "../Assests3/waving_lampshade3.jpg"
+import img24 from "../Assests3/waving_lampshade4.jpg"
+import img25 from "../Assests3/waving_lampshade5.jpg"
+import img26 from "../Assests3/waving_lampshade6.jpg"
+import img27 from "../Assests3/waving_lampshade7.jpg"
+import img28 from "../Assests3/waving_lampshade8.jpg"
+import img29 from "../Assests3/cosmatic01.jpg"
+import img30 from "../Assests3/cosmatic02.jpg"
+import img31 from "../Assests3/cosmatic03.jpg"
+import img32 from "../Assests3/costamic04.jpg"
+import img33 from "../Assests3/costamic05.jpg"
+import img34 from "../Assests3/jwellery_boxA1.jpg"
+import img35 from "../Assests3/jwellery_boxA2.jpg"
+import img36 from "../Assests3/jwellery_boxA3.png"
+import img37 from "../Assests3/jwellery_boxB1.jpg"
+import img38 from "../Assests3/jwellery_boxB2.png"
+import img39 from "../Assests3/jwellery_boxB3.png"
+import img40 from "../Assests3/table_organizer1.jpg"
+import img41 from "../Assests3/tea_coaster1.png"
+import img42 from "../Assests3/desk_organizer01.png"
+import img43 from "../Assests3/desk_organizer02.jpg"
+import img44 from "../Assests3/flower_bas1.jpg"
+import img45 from "../Assests3/idcard1.jpg"
+import img46 from "../Assests3/clock1.jpg"
+import img47 from "../Assests3/clck2.jpg"
+import img48 from "../Assests3/memento1.jpg"
 import img49 from "../Assests3/tray1.jpg"
-import img50 from "../Assests3/waving_basket1.jpg"
-import img51 from "../Assests3/waving_basket2.jpg"
-import img52 from "../Assests3/waving_basket3.jpg"
-import img53 from "../Assests3/waving_basket4.jpg"
-import img54 from "../Assests3/waving_design1.jpg"
-import img55 from "../Assests3/waving_design10.jpg"
-import img56 from "../Assests3/waving_design11.jpg"
-import img57 from "../Assests3/waving_design12.jpg"
-import img58 from "../Assests3/waving_design13.jpg"
-import img59 from "../Assests3/waving_design14.jpg"
-import img60 from "../Assests3/waving_design2.jpg"
-import img61 from "../Assests3/waving_design3.jpg"
-import img62 from "../Assests3/waving_design4.jpg"
-import img63 from "../Assests3/waving_design5.jpg"
-import img64 from "../Assests3/waving_design6.jpg"
-import img65 from "../Assests3/waving_design7.jpg"
-import img66 from "../Assests3/waving_design8.jpg"
-import img67 from "../Assests3/waving_design9.jpg"
-import img68 from "../Assests3/waving_lamp2.jpg"
-import img69 from "../Assests3/waving_lampshade1.jpg"
-import img70 from "../Assests3/waving_lampshade2.jpg"
-import img71 from "../Assests3/waving_lampshade3.jpg"
-import img72 from "../Assests3/waving_lampshade6.jpg"
-import img73 from "../Assests3/waving_lampshade7.jpg"
-import img74 from "../Assests3/waving_lampshade8.jpg"
-import img75 from "../Assests3/clck2.jpg"
-import img76 from "../Assests3/waving_lampshade4.jpg"
-import img77 from "../Assests3/waving_lampshade5.jpg"
+import img50 from "../Assests3/TRAY 7.jpg"
+import img51 from "../Assests3/soap case A2.jpg"
+import img52 from "../Assests3/soap case A3.jpg"
+import img53 from "../Assests3/soap case A4.jpg"
+import img54 from "../Assests3/case1.png"
+import img55 from "../Assests3/case2.png"
+import img56 from "../Assests3/case3.png"
+import img57 from "../Assests3/case4.png"
+import img58 from "../Assests3/case5.png"
+import img59 from "../Assests3/bamboo_box1.jpg"
+import img60 from "../Assests3/waving_basket1.jpg"
+import img61 from "../Assests3/waving_basket2.jpg"
+import img62 from "../Assests3/waving_basket3.jpg"
+import img63 from "../Assests3/waving_basket4.jpg"
+import img64 from "../Assests3/waving_design1.jpg"
+import img65 from "../Assests3/waving_design2.jpg"
+import img66 from "../Assests3/waving_design3.jpg"
+import img67 from "../Assests3/waving_design4.jpg"
+import img68 from "../Assests3/waving_design5.jpg"
+import img69 from "../Assests3/waving_design6.jpg"
+import img70 from "../Assests3/waving_design7.jpg"
+import img71 from "../Assests3/waving_design8.jpg"
+import img72 from "../Assests3/waving_design9.jpg"
+import img73 from "../Assests3/waving_design10.jpg"
+import img74 from "../Assests3/waving_design11.jpg"
+import img75 from "../Assests3/waving_design12.jpg"
+import img76 from "../Assests3/waving_design13.jpg"
+import img77 from "../Assests3/waving_design14.jpg"
 
 
 
@@ -164,7 +164,8 @@ const Products = () => {
 
     return (
         <section className="products">
-            <h3>Our Products</h3>
+            <h3>We believe in nurturing a greener planet. Our eco-friendly bamboo products offer a sustainable alternative to plastic, helping you make responsible choices for the environment.</h3>
+            <h2>Our Products</h2>
             <div className="product-list">
                 {products.map((product, index) => (
                     <div className="product" key={index}>

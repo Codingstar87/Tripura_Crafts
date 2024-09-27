@@ -1,8 +1,17 @@
 
-
 .products {
     padding: 30px;
     text-align: center;
+    padding-top: 40px;
+}
+.products h3{
+    font-family: "Playfair Display", serif;
+    font-size: 30px;
+
+}
+.products h2{
+    font-size: 45px;
+    font-family: "Playfair Display", serif;
 }
 
 .product-list {
@@ -64,9 +73,14 @@
 }
 
 @media screen and (max-width: 480px) {
+    .products h3{
+        font-size: 10px;
+    
+    }
     .products {
         padding: 0px;
         text-align: center;
+        padding-top: 40px;
     }
     .product {
         width: 40%;
@@ -75,6 +89,10 @@
     }
     .product img {
         height: 160px; 
+    }
+    .products h2{
+        font-size: 25px;
+        
     }
 }
 

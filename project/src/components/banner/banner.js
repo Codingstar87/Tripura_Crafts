@@ -22,6 +22,7 @@ const Banner = () => {
                 </div>
             ))}
         </div>
+        <h2>EcoWorld Zilpa Producer Company Limited</h2>
         </div>
         
             <ProductCards/>
