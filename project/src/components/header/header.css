@@ -113,7 +113,7 @@
     }
 
     .header h1 {
-        font-size: 12px;
+        font-size: 15px;
         margin: 0; 
         flex: 1; 
         text-align: left; 
@@ -121,9 +121,9 @@
     }
 
     .logo-image {
-        width: 80px; 
+        width: 85px; 
      
-        margin-left: 70px;
+        margin-left: 55px;
     }
 
     .menu-icon {

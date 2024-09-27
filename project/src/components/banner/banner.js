@@ -5,6 +5,7 @@ import img1 from '../Assests/bmw-m-series-seo-overview-ms-04.jpg'; // Example im
 import img2 from '../Assests/images.jpeg';
 import img3 from '../Assests/desktop_banner_modi_0.png';
 import ProductCards from "../productCards/productCards"
+import companylogo from "../Assests/company-logo.jpg"
 
 const Banner = () => {
     const images = [img1,
@@ -22,7 +23,10 @@ const Banner = () => {
                 </div>
             ))}
         </div>
-        <h2>EcoWorld Zilpa Producer Company Limited</h2>
+            <div className='companyName'>
+            <img src={companylogo} alt="comany-logo" className="company-logo" />
+            <h2>EcoWorld Zilpa Producer Company Limited</h2>
+            </div>
         </div>
         
             <ProductCards/>

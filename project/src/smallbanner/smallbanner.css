@@ -52,4 +52,38 @@
       max-width: 100%;
     }
   }
+  @media (max-width: 480px) {
+    .small-banner {
+      flex-direction: column-reverse; /* Show text after image */
+      justify-content: center;
+      align-items: center;
+      padding: 30px 20px; /* Reduce padding for mobile */
+    }
+  
+    .small-banner-text {
+      max-width: 100%;
+      text-align: center; /* Center the text for mobile */
+    }
+  
+    .small-banner-text h1 {
+      font-size: 24px; /* Reduce heading font size */
+      margin-bottom: 15px;
+    }
+  
+    .small-banner-text p {
+      font-size: 16px; /* Slightly reduce paragraph font size */
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+  
+    .small-banner-image img {
+      max-width: 100%; /* Ensure the image takes full width */
+      margin-bottom: 20px; /* Add spacing below the image */
+    }
+  
+    .shop-now-btn {
+      padding: 8px 16px; /* Slightly smaller button */
+      font-size: 14px; /* Adjust button text size */
+    }
+  }
   

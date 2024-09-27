@@ -164,14 +164,14 @@ const Products = () => {
 
     return (
         <section className="products">
-            {/* <h3>We believe in nurturing a greener planet. Our eco-friendly bamboo products offer a sustainable alternative to plastic, helping you make responsible choices for the environment.</h3> */}
+            
             <h2>Our Products</h2>
             <div className="product-list">
                 {products.map((product, index) => (
                     <div className="product" key={index}>
                         <img src={product.img} alt={product.name} />
                         <h4>{product.name}</h4>
-                        <p>{product.price}</p>
+                        {/* <p>{product.price}</p> */}
                     </div>
                 ))}
             </div>

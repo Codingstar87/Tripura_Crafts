@@ -1,17 +1,14 @@
 .banner {
     /* background-image: url('bamboo-background.jpg'); */
     background-size: cover;
-    padding-top: 120px;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     
 }
-.full-banner h2 {
-    font-family:  "Playfair Display", serif;
-    font-size: 60px;
-}
+
 
 .banner h1 {
     font-family:  "Playfair Display", serif;
@@ -47,6 +44,20 @@
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid #fff;
+}
+.companyName {
+    display: flex;
+    align-items: center; /* Vertically centers the items */
+    gap: 10px; /* Adds some space between the image and the text */
+}
+
+.company-logo {
+    width: 170px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+.full-banner h2 {
+    font-family:  "Playfair Display", serif;
+    font-size: 40px;
 }
 
 /* Media Queries for Responsive Design */
@@ -93,5 +104,16 @@
     .circle-image {
         width: 90px; /* Adjust image size */
         height: 90px; /* Adjust height */
+    }
+    .company-logo {
+        width: 100px; /* Adjust size as needed */
+        height: auto; /* Maintain aspect ratio */
+        padding-left: 20px;
+        
+    }
+    .companyName {
+        
+        gap: 0px; 
+        padding-bottom: 30px;
     }
 }
