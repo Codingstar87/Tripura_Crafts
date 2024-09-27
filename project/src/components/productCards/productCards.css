@@ -1,3 +1,20 @@
+.carousel-container {
+    position: relative;
+    z-index: 10; /* Ensures it appears on top */
+  }
+  .fixed-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* or set an appropriate height */
+    overflow: hidden; /* if necessary */
+    z-index: 5; /* Make sure this doesn't overlap with the carousel */
+  }
+    
+
+
+
 .product-cards {
     display: flex;
     justify-content: center;
