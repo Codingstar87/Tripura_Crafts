@@ -7,6 +7,7 @@
 .products h3{
     font-family: "Playfair Display", serif;
     font-size: 30px;
+    background:#84eab3;
 
 }
 .products h2{
@@ -54,11 +55,13 @@
 .product h4 {
     margin: 10px 0;
     font-size: 18px;
+    font-family:  "Playfair Display", serif;
 }
 
 .product p {
     color: #555;
     flex-grow: 1; 
+    font-family:  "Playfair Display", serif;
 }
 
 
@@ -92,6 +95,11 @@
     }
     .products h2{
         font-size: 25px;
+        
+    }
+    .product h4 {
+        margin: 2px 0;
+        font-size: 15px;
         
     }
 }

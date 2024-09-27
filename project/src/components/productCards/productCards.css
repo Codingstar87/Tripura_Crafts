@@ -82,14 +82,18 @@
 
     .card-content {
         padding: 10px; /* Adjust padding for mobile */
+        font-family: "Playfair Display", serif;
+
     }
 
     .card h2 {
         font-size: 1.5rem; /* Adjust font size for mobile */
+        font-family: "Playfair Display", serif;
     }
 
     .card p {
         font-size: 1rem; /* Adjust paragraph font size for mobile */
+
     }
 
     /* Optional: Horizontal scroll buttons */

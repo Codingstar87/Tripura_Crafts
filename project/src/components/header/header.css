@@ -71,7 +71,7 @@
   .MuiListItem-root {
     padding: 10px 16px;
     color: #075b27; 
-    font-family: "Gowun Batang", serif;
+    font-family: "Playfair Display", serif;
     
   }
   
@@ -79,6 +79,7 @@
   .MuiListItem-root:hover {
     background-color: #e0e0e0; 
     color: rgb(183, 4, 120);
+    font-family: "Playfair Display", serif;
   }
 
   @media (max-width: 768px) {

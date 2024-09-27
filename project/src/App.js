@@ -6,6 +6,7 @@ import Footer from './components/footer/footer.js';
 
 import './App.css'; // Main CSS file
 import WhatsApp from "../src/components/Whatsapp/Whatsapp.js";
+import SmallBanner from './smallbanner/smallbanner.js';
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
         <div className="App">
             <Header />
             <Banner />
+            <SmallBanner/>
             <Products />
             <Footer />
             <WhatsApp/>
