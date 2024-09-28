@@ -82,6 +82,8 @@
     font-family: "Playfair Display", serif;
   }
 
+  
+
   @media (max-width: 768px) {
     .header {
         padding: 0px 20px; 

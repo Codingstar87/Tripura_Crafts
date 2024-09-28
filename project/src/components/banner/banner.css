@@ -1,5 +1,179 @@
-.banner {
-    /* background-image: url('bamboo-background.jpg'); */
+
+
+.full-banner {
+    background-image: url('../Assets2/bottle3.jpg');  
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 100px 0px;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.full-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 128, 0, 0.6); /* Green overlay for readability */
+    z-index: -1;
+}
+
+
+.banner h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    color: #f4f4f9; /* White or light color */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+.banner .subtitle {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: #e0e0e0;
+    margin-top: 10px;
+}
+
+
+.circle-images-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.image-wrapper {
+    width: 150px;
+    height: 150px;
+    padding: 3px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom left, #4CAF50, #8BC34A); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-image {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.cta-button {
+    background-color: #8BC34A;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 20px 0;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #4CAF50; /* Darker green on hover */
+}
+
+.companyName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.company-logo {
+    width: 100px;
+    height: auto;
+    border-radius: 10%;
+}
+
+.full-banner h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    color: #f4f4f9;
+    margin-top: 0;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .full-banner h1 {
+        font-size: 36px;
+    }
+
+    .circle-images-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .image-wrapper {
+        width: 120px;
+        height: 120px;
+    }
+
+    .circle-image {
+        width: 110px;
+        height: 110px;
+    }
+}
+
+@media (max-width: 480px) {
+    .full-banner h1 {
+        font-size: 26px;
+    }
+
+    .circle-images-container {
+        justify-content: center;
+    }
+
+    .image-wrapper {
+        width: 100px;
+        height: 100px;
+    }
+
+    .circle-image {
+        width: 90px;
+        height: 90px;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .company-logo {
+        width: 60px;
+
+    }
+
+    .full-banner h2 {
+        font-size: 22px;
+        padding-left: 0px;
+    }
+    .subtitle{
+        font-size: 9px;
+    }
+    .companyName{
+        padding-left:15px;
+        gap: 0px;
+    }
+}
+
+
+
+
+
+/* .banner {
+    
     background-size: cover;
     padding-top: 100px;
     display: flex;
@@ -24,22 +198,22 @@
     justify-content: center;
     gap: 20px;
     margin: 30px 0;
-    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    flex-wrap: wrap;
 }
 
 .image-wrapper {
-    width: 147px;  /* Wrapper size is slightly larger */
+    width: 147px;  
     height: 147px;
-    padding: 2px;  /* 2px gap between the image and the border */
+    padding: 2px;  
     border-radius: 50%;
-    background: linear-gradient(to left bottom, rgb(230, 30, 63), rgb(240, 240, 51)); /* Gradient border */
+    background: linear-gradient(to left bottom, rgb(230, 30, 63), rgb(240, 240, 51));
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .circle-image {
-    width: 138px;  /* Image size */
+    width: 138px; 
     height: 138px;
     object-fit: cover;
     border-radius: 50%;
@@ -47,38 +221,38 @@
 }
 .companyName {
     display: flex;
-    align-items: center; /* Vertically centers the items */
-    gap: 10px; /* Adds some space between the image and the text */
+    align-items: center; 
+    gap: 10px; 
 }
 
 .company-logo {
-    width: 170px; /* Adjust size as needed */
-    height: auto; /* Maintain aspect ratio */
+    width: 170px; 
+    height: auto; 
 }
 .full-banner h2 {
     font-family:  "Playfair Display", serif;
     font-size: 40px;
 }
 
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) { /* Tablet view */
+
+@media (max-width: 768px) { 
     .circle-images-container {
-        flex-direction: row; /* Align items in a row */
-        justify-content: space-between; /* Distribute space between items */
+        flex-direction: row;
+        justify-content: space-between; 
     }
 
     .image-wrapper {
-        width: 120px; /* Adjust wrapper size */
-        height: 120px; /* Adjust height */
+        width: 120px; 
+        height: 120px; 
     }
 
     .circle-image {
-        width: 110px; /* Adjust image size */
-        height: 110px; /* Adjust height */
+        width: 110px; 
+        height: 110px;
     }
 }
 
-@media (max-width: 480px) { /* Mobile view */
+@media (max-width: 480px) { 
     .full-banner h2 {
         font-size: 20px;
     }
@@ -91,23 +265,23 @@
         
     }
     .circle-images-container {
-        flex-direction: row; /* Ensure row-wise layout */
-        justify-content: center; /* Center items */
+        flex-direction: row; 
+        justify-content: center; 
 
     }
 
     .image-wrapper {
-        width: 100px; /* Adjust wrapper size */
-        height: 100px; /* Adjust height */
+        width: 100px; 
+        height: 100px; 
     }
 
     .circle-image {
-        width: 90px; /* Adjust image size */
-        height: 90px; /* Adjust height */
+        width: 90px; 
+        height: 90px; 
     }
     .company-logo {
-        width: 100px; /* Adjust size as needed */
-        height: auto; /* Maintain aspect ratio */
+        width: 100px; 
+        height: auto; 
         padding-left: 20px;
         
     }
@@ -116,4 +290,4 @@
         gap: 0px; 
         padding-bottom: 30px;
     }
-}
+} */

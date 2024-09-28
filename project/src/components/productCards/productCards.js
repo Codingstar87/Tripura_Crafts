@@ -31,10 +31,10 @@ const ProductCards = ({ deviceType }) => {
       draggable={true}
       showDots={true}
       responsive={responsive}
-      ssr={true} // Server-Side Rendering for better performance
+      ssr={true} 
       infinite={true}
       autoPlay={deviceType !== "mobile"}
-      autoPlaySpeed={3000}  // Increased speed for better readability
+      autoPlaySpeed={3000} 
       keyBoardControl={true}
       customTransition="all .5s"
       transitionDuration={500}
