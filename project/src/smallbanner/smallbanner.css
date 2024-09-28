@@ -37,21 +37,44 @@
     max-width: 500px;
     border-radius: 10px;
   }
+    
+  @media (max-width: 1180px) {
+    .small-banner {
+      flex-direction: column-reverse; /* Stack the elements vertically */
+       /* Adjust padding for smaller screens */
+    }
+    .small-banner-text {
+      max-width: 100%;
+      margin-top: 20px; /* Add space between the image and text */
+  }
+  }
   
   @media (max-width: 768px) {
     .small-banner {
-      flex-direction: column;
-      text-align: center;
+      flex-direction: column-reverse; /* Stack the elements vertically */
+        text-align: center; /* Center the text */
+        padding: 30px 20px; /* Adjust padding for smaller screens */
     }
-  
+
     .small-banner-text {
-      max-width: 100%;
+        max-width: 100%;
+        margin-top: 20px; /* Add space between the image and text */
     }
-  
+
+    .small-banner-text h1 {
+        font-size: 28px; /* Adjust font size for smaller screens */
+    }
+
+    .small-banner-text p {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
     .small-banner-image img {
-      max-width: 100%;
+        max-width: 100%; /* Ensure the image is responsive */
+        margin-bottom: 20px; /* Add margin at the bottom of the image */
     }
-  }
+}
+
   @media (max-width: 480px) {
     .small-banner {
       flex-direction: column-reverse; /* Show text after image */

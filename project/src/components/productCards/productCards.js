@@ -15,7 +15,7 @@ const ProductCards = ({ deviceType }) => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 1,
       slidesToSlide: 1,
     },
     mobile: {

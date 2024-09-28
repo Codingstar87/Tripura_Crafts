@@ -1,17 +1,18 @@
 
 
 .full-banner {
-    background-image: url('../Assets2/bottle3.jpg');  
+    background-image: url('../Assets2/bottle3.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    padding: 100px 0px;
+    -webkit-background-size: cover; /* Ensures compatibility with iOS */
+    background-attachment: scroll; /* Fixed might cause issues */
+    padding: 100px 0;
     text-align: center;
     color: #fff;
     position: relative;
     z-index: 1;
-    
 }
+
 
 .full-banner::before {
     content: "";
@@ -106,6 +107,49 @@
 }
 
 /* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    @media (max-width: 1024px) {
+        .full-banner {
+            padding: 120px 20px; /* Further reduced padding */
+        }
+    
+        .banner h1 {
+            font-size: 32px; /* Further reduced heading size */
+        }
+    
+        .banner .subtitle {
+            font-size: 16px; /* Smaller subtitle */
+        }
+    
+        .circle-images-container {
+            gap: 0px; /* Less gap between images */
+        }
+    
+        .image-wrapper {
+            width: 110px; /* Adjusted image wrapper size */
+            height: 110px;
+        }
+    
+        .circle-image {
+            width: 100px; /* Smaller images */
+            height: 100px;
+        }
+    
+        .cta-button {
+            font-size: 14px; /* Smaller font size */
+            padding: 8px 18px; /* Smaller padding */
+        }
+    
+        .company-logo {
+            width: 70px; /* Smaller company logo */
+        }
+    
+        .full-banner h2 {
+            font-size: 24px; /* Adjusted heading size */
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .full-banner h1 {
         font-size: 36px;
