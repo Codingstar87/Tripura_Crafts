@@ -15,7 +15,7 @@ function App() {
         <div className="App">
             <Header />
             <Banner />
-            <div style={{ marginBottom: '30px' }}></div>
+            <div style={{ marginBottom: '10px' }}></div>
             <ProductCards/>
             <SmallBanner/>
             <Products />
