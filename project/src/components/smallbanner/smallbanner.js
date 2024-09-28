@@ -1,6 +1,6 @@
 import React from 'react';
 import './smallbanner.css'; 
-import bannerimg from "../components/Assests/banner.jpg"; // Ensure the correct file path
+import bannerimg from "../Assests/banner.jpg"; // Ensure the correct file path
 
 const SmallBanner = () => {
   return (

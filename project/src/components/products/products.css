@@ -13,6 +13,7 @@
 .products h2{
     font-size: 45px;
     font-family: "Playfair Display", serif;
+    padding-top: 5%;
 }
 
 .product-list {

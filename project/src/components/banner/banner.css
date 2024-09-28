@@ -4,15 +4,14 @@
     background-image: url('../Assets2/bottle3.jpg');
     background-size: cover;
     background-position: center;
-    -webkit-background-size: cover; /* Ensures compatibility with iOS */
-    background-attachment: scroll; /* Fixed might cause issues */
+    -webkit-background-size: cover; 
+    background-attachment: fixed;
     padding: 100px 0;
     text-align: center;
     color: #fff;
     position: relative;
     z-index: 1;
 }
-
 
 .full-banner::before {
     content: "";

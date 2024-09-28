@@ -1,13 +1,17 @@
 import React from "react";
 import "./banner.css";
-import img1 from "../Assests3/bottle11.jpg";
-import img2 from "../Assests3/bottle2.jpg";
-import img3 from "../Assests3/bottle3.jpg";
+import img1 from "../Assests3/idcard1.jpg";
+import img2 from "../Assests3/bottle3.jpg";
+import img3 from "../Assests3/bottle2.jpg";
 
 import companylogo from "../Assests/company-logo.jpg";
 
-const Banner = () => {
+const Banner = React.forwardRef((props,ref) => {
   const images = [img1, img2, img3];
+  console.log(ref)
+  const handleScroll = () => {
+    ref.current?.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <div className="full-banner">
       <div className="banner">
@@ -26,7 +30,7 @@ const Banner = () => {
           ))}
         </div>
 
-        <button className="cta-button">Explore Our Products</button>
+        <button className="cta-button" onClick={handleScroll}>Explore Our Products</button>
 
         <div className="companyName">
           <img src={companylogo} alt="Company Logo" className="company-logo" />
@@ -34,8 +38,9 @@ const Banner = () => {
         </div>
       </div>
     </div>
+
   );
-};
+});
 
 export default Banner;
 

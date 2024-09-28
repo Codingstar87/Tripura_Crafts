@@ -1,0 +1,23 @@
+.coming-soon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f4f4f9;
+  }
+  
+  .coming-soon-container h1 {
+    font-size: 48px;
+    color: #333;
+    font-family: "Playfair Display", serif;
+  }
+  
+  .coming-soon-container p {
+    font-size: 18px;
+    color: #666;
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+  }
+  
