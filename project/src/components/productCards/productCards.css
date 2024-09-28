@@ -1,7 +1,8 @@
 .carousel-container {
     position: relative;
-    z-index: 10; /* Ensures it appears on top */
-  }
+    z-index: 10; /* Ensures it appears below the WhatsApp button */
+}
+
   .fixed-div {
     position: fixed;
     top: 0;
