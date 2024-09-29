@@ -1,8 +1,6 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
-import  { useRef } from 'react';
-
 
 // Lazy load the components
 const Header = React.lazy(() => import('./components/header/header.js'));
@@ -15,30 +13,41 @@ const ProductCards = React.lazy(() => import('./components/productCards/productC
 const ComingSoon = React.lazy(() => import('./components/CommingSoon/ComingSoon.js'));
 
 function App() {
-    const targetRef = useRef(null);
-    return (
-        <Suspense fallback={<div>Loading...</div>}>
-            <Router>
-                <Header />
-                <Routes>
-                    <Route path="/" element={
-                        <>
-                            <Banner ref={targetRef}/>
-                            <div style={{ marginBottom: '10px' }}></div>
-                            <ProductCards />
-                            <SmallBanner />
-                            {/* <div ref={targetRef}></div> */}
-                            <Products ref={targetRef}/>
-                            <Footer />
-                            <WhatsApp />
-                        </>
-                    } />
-                    <Route path="/about" element={<ComingSoon />} />
-                    <Route path="/contact" element={<ComingSoon />} />
-                </Routes>
-            </Router>
-        </Suspense>
-    );
+  // Ref for the products section
+  const productsRef = useRef(null);
+
+  // Function to scroll to products
+  const scrollToProducts = () => {
+    if (productsRef.current) {
+      productsRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Router>
+        <Header onProductsClick={scrollToProducts} />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Banner />
+              <div style={{ marginBottom: '10px' }}></div>
+              <ProductCards />
+              <SmallBanner />
+              {/* Products section */}
+              <div ref={productsRef}>
+                <Products />
+              </div>
+              <Footer />
+              <WhatsApp />
+            </>
+          } />
+          <Route path="/about" element={<ComingSoon />} />
+          <Route path="/contact" element={<ComingSoon />} />
+        </Routes>
+      </Router>
+    </Suspense>
+  );
 }
 
 export default App;
