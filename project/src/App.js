@@ -14,12 +14,12 @@ const ComingSoon = React.lazy(() => import('./components/CommingSoon/ComingSoon.
 
 function App() {
   // Ref for the products section
-  const productsRef = useRef(null);
+  const targetRef = useRef(null);
 
   // Function to scroll to products
   const scrollToProducts = () => {
-    if (productsRef.current) {
-      productsRef.current.scrollIntoView({ behavior: 'smooth' });
+    if (targetRef.current) {
+      targetRef.current.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -30,14 +30,14 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
-              <Banner />
+              <Banner ref={targetRef}/>
               <div style={{ marginBottom: '10px' }}></div>
               <ProductCards />
               <SmallBanner />
               {/* Products section */}
-              <div ref={productsRef}>
-                <Products />
-              </div>
+              {/* <div ref={productsRef}> */}
+                <Products ref={targetRef}/>
+              {/* </div> */}
               <Footer />
               <WhatsApp />
             </>
