@@ -1,0 +1,1 @@
+"At Tripura Crafts, we are committed to creating eco-friendly, handcrafted bamboo products that blend tradition with innovation. Our mission is to reduce plastic waste by offering sustainable, stylish alternatives that support both the environment and local artisans. Choose bamboo, choose a greener future."
